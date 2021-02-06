@@ -41,7 +41,7 @@ nav {
   width: 100%;
 }
 
-@media (max-width: 900px) {
+@media screen and (min-width: 450px) and (max-width: 900px) {
   h1 {
   font-size: 4rem;
 }
@@ -61,7 +61,7 @@ nav {
 }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   h1 {
   font-size: 5rem;
 }
