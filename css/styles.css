@@ -127,11 +127,29 @@ nav {
   padding-top: 3rem;
 }
 
+/* Taille de l'image de la séance */
+.img-workout {
+  width: 50%;
+}
+
+@media (min-width: 998px){
+.img-workout {
+  width: 35%;
+  }
+}
+
+.title-width {
+  width: 100%;
+  margin-left: 0;
+  }
+
+@media (min-width: 998px){
 .title-width {
   width: 40%;
   margin-left: 0;
   position: relative;
   left: 30%;
+}
 }
 
 /* Texte pour le contenu */
