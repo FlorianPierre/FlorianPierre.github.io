@@ -24,7 +24,7 @@ h2, h3, .subtitle, .subsection {
   font-size: 4rem;
 }
 
-p, .subnote, .card-text, .card-title, .btn {
+p, ul, li, .subnote, .card-text, .card-title, .btn {
   font-size: 3rem;
 }
 
@@ -42,7 +42,7 @@ p, .subnote, .card-text, .card-title, .btn {
     font-size: 32px;
   }
 
-  p, .subnote, .card-text, .card-title, .btn {
+  p, ul, li, .subnote, .card-text, .card-title, .btn {
     font-size: 18px;
   }
 
@@ -60,7 +60,7 @@ h3 {
   margin-left: 5%;
 }
 
-p {
+p, ul, li {
   color: #133B5C;
   margin-left: 7.5%;
   font-family: Comfortaa;
