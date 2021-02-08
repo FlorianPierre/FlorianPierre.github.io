@@ -3,36 +3,51 @@ body {
   margin: 0;
 }
 
-h1 {
-  color: #28305D;
-  margin-left: 5%;
-  margin-right: 5%;
+/* Police titre, sous-titre, sous-section, bouttons connexions et essayer, etc. */
+h1, h2, h3, .signin, .signup, .footer-link, .legal-link, .card-title, .btn {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 2.75rem;
   font-style: italic;
 }
 
-h2 {
+/* Couleur titre, sous-titre */
+h1, h2 {
   color: #28305D;
+}
+
+/* Taille police */
+h1 {
+  font-size: 3.5rem;
+}
+
+.title-t, .top-title-right {
+  font-size: 3rem;
+}
+
+h2, h3, .subtitle, .subsection {
+  font-size: 2rem;
+}
+
+p, .subnote, .card-text, .card-title, .btn {
+  font-size: 1rem;
+}
+
+.signin, .signup, , .legal-link {
+  font-size: 0.8rem;
+}
+
+h2 {
   margin-left: 5%;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.2rem;
-  font-style: italic;
 }
 
 h3 {
   color: #1E5F74;
   margin-left: 5%;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.2rem;
-  font-style: italic;
 }
 
 p {
   color: #133B5C;
   margin-left: 7.5%;
   font-family: Comfortaa;
-  font-size: 1rem;
 }
 
 nav {
@@ -41,53 +56,18 @@ nav {
   width: 100%;
 }
 
-@media screen and (min-width: 450px) and (max-width: 900px) {
-  h1 {
-  font-size: 4rem;
-}
-
-h2, h3 {
-  font-size: 2rem;
-}
-
-p {
-  font-size: 1.75rem;
-}
-
-nav {
-  background-color: #28305D;
-  height: 8rem;
-  width: 100%;
-}
-}
-
-@media screen and (max-width: 450px) {
-  h1 {
-  font-size: 5rem;
-}
-
-h2, h3 {
-  font-size: 3rem;
-}
-
-p {
-  font-size: 2.5rem;
-}
-
-nav {
-  background-color: #28305D;
-  height: 8rem;
-  width: 100%;
-}
+/* HEADER : Logo + Boutons Connexion et Essayez */
+.logo {
+  margin-right: 0;
+  position: relative;
+  bottom: 0.2rem;
+  left: 5rem;
 }
 
 .signin {
   height: 2rem;
   margin-right: 2rem;
   margin-left: 2rem;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1rem;
-  font-style: italic;
   line-height: 50%;
   letter-spacing: normal;
   color: #fff;
@@ -101,9 +81,6 @@ nav {
 .signup {
   border-radius: 40px;
   height: 2rem;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1rem;
-  font-style: italic;
   color: #fff;
   background-color: #c33764;
   border: 0;
@@ -113,67 +90,25 @@ nav {
   right: 3rem;
 }
 
+/* BODY */
 .title {
   text-align: center;
-  font-size: 34px;
   margin-top: 5rem;
   padding-top: 5rem;
 }
 
 .title-t {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 .container-fluid {
   margin-bottom: 3rem;
 }
 
-.subtitle {
-  margin-left: 0;
-  font-size: 24px;
-  display: inline-block;
-}
-
-.subnote {
-  margin-left: 5%;
-  font-size: 18px;
-  display: inline-block;
-}
-
-.title-container {
-  height: 250px;
-  position: relative;
-  top: 5%;
-  margin: auto;
-}
-
-.top-image-left {
-  position: relative;
-  left: 11rem;
-}
-
-.top-image-right {
-  position: relative;
-  left: 25%;
-}
-
-.top-title-left {
-  text-align: center;
-  padding-top: 2rem;
-  font-size: 24px;
-}
-
+/* Texte de droite pour chaque séance*/
 .top-title-right {
   text-align: center;
-  padding-top: 2rem;
-  font-size: 24px;
-}
-
-.logo {
-  margin-right: 0;
-  position: relative;
-  bottom: 0.2rem;
-  left: 5rem;
+  padding-top: 3rem;
 }
 
 .content-container {
@@ -190,8 +125,7 @@ footer {
 
 .footer-link {
   color: #FAF6F7;
-  font-family: 'Nunito Sans', sans-serif;
-  margin: 2em 2em;
+  margin: 2rem 2rem;
   text-decoration: none;
 }
 
@@ -201,14 +135,12 @@ a:hover {
 
 .legal-link {
   color: #FAF6F7;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 0.75em;
-  margin: 2em 2em;
-  padding-top: 2em;
+  margin: 2rem 2rem;
+  padding-top: 2rem;
   text-decoration: none;
 }
 
-/*Card*/
+/* Cartes des programmes */
 .card {
   background: #fff;
   box-shadow: 0 20px 50px rgba(0, 0, 0, .1);
@@ -220,45 +152,45 @@ a:hover {
 .col {
   margin-bottom: 2rem;
 }
+
 .card-title {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 0.8rem;
   color: #28305D;
   margin-left: 1.2rem;
 }
 
+/* Passage souris sur la carte des programmes */
 .card:hover {
   box-shadow: 0 30px 70px rgba(0, 0, 0, .2);
 }
 
+/* Image programmes */
 .card-img-top {
   border-radius: 50%;
   margin: 1.5rem auto 1.5rem auto;
   width: 50%;
 }
 
-.card-text {
-  font-size: 0.8rem;
-}
-
+/* Boutons Apple et PlayStore */
 .btn {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 0.8rem;
   position: relative;
-  bottom: 0.2rem;
+  bottom: 0.7rem;
+  width: 80%;
+  margin-bottom: 1.2rem;
 }
 
+/* Logo Apple et PlayStore */
 .fab {
   font-size: 1rem;
 }
 
+/* Padding Carte */
 .card-pad {
   padding: 1rem 4rem;
 }
 
+/* Titre Retrouvez tous nos programmes sur l'app */
 .subsection {
-  font-size: 3rem;
-  padding: auto;
+  padding: inherit;
   text-align: center;
 }
 
