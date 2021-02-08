@@ -16,19 +16,19 @@ h1, h2 {
 
 /* Taille police */
 h1 {
-  font-size: 3.5rem;
+  font-size: 5.5rem;
 }
 
 .title-t, .top-title-right {
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
 
 h2, h3, .subtitle, .subsection {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 p, .subnote, .card-text, .card-title, .btn {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .signin, .signup, , .legal-link {
