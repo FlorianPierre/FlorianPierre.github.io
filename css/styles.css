@@ -1,7 +1,7 @@
 body {
+  width: 100%;
   background-color: #FAF6F7;
   margin: 0;
-  font-size: 100%;
 }
 
 /* Police titre, sous-titre, sous-section, bouttons connexions et essayer, etc. */
@@ -15,13 +15,9 @@ h1, h2 {
   color: #28305D;
 }
 
-/* Taille police */
-h1 {
-  font-size: 5.5rem;
-}
-
+/* Taille police sur mobile */
 .title-t, .top-title-right {
-  font-size: 5rem;
+  font-size: 5.5rem;
 }
 
 h2, h3, .subtitle, .subsection {
@@ -32,8 +28,27 @@ p, .subnote, .card-text, .card-title, .btn {
   font-size: 3rem;
 }
 
-.signin, .signup, , .legal-link {
-  font-size: 0.8rem;
+.signin, .signup, .legal-link, .footer-link {
+  font-size: 2rem;
+}
+
+/* Taille police sur ordinateur */
+@media (min-width: 998px) {
+  .title-t, .top-title-right {
+    font-size: 48px;
+  }
+
+  h2, h3, .subtitle, .subsection {
+    font-size: 32px;
+  }
+
+  p, .subnote, .card-text, .card-title, .btn {
+    font-size: 18px;
+  }
+
+  .signin, .signup, .legal-link, .footer-link {
+    font-size: 16px;
+  }
 }
 
 h2 {
@@ -106,12 +121,18 @@ nav {
   margin-bottom: 5rem;
 }
 
-/* Texte de droite pour chaque séance*/
+/* Texte de droite pour chaque séance */
 .top-title-right {
   text-align: center;
   padding-top: 3rem;
 }
 
+.title-width {
+  width: 40%;
+  margin-left: 0;
+}
+
+/* Texte pour le contenu */
 .content-container {
   margin: 5%;
   line-height: 2em;
