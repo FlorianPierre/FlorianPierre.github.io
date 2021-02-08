@@ -130,6 +130,8 @@ nav {
 .title-width {
   width: 40%;
   margin-left: 0;
+  position: relative;
+  left: 20%;
 }
 
 /* Texte pour le contenu */
