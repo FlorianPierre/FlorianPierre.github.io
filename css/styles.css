@@ -5,7 +5,7 @@ body {
 }
 
 /* Police titre, sous-titre, sous-section, bouttons connexions et essayer, etc. */
-h1, h2, h3, .signin, .signup, .footer-link, .legal-link, .card-title, .btn {
+h1, h2, h3, .signin, .signup, .footer-link, .legal-link, .card-title, .btn, .dw-play-store, .dw-app-store {
   font-family: 'Nunito Sans', sans-serif;
   font-style: italic;
 }
@@ -28,7 +28,7 @@ p, .text-list-detail, .subnote, .card-text, .card-title, .btn {
   font-size: 3rem;
 }
 
-.signin, .signup, .legal-link, .footer-link {
+.signin, .signup, .legal-link, .footer-link, .dw-play-store, .dw-app-store {
   font-size: 2rem;
 }
 
@@ -46,7 +46,7 @@ p, .text-list-detail, .subnote, .card-text, .card-title, .btn {
     font-size: 18px;
   }
 
-  .signin, .signup, .legal-link, .footer-link {
+  .signin, .signup, .legal-link, .footer-link, .dw-play-store, .dw-app-store {
     font-size: 16px;
   }
 }
@@ -66,46 +66,84 @@ p, .text-list-detail {
   font-family: Comfortaa;
 }
 
-
 /* Barre de navigation */
 nav {
-background-color: #28305D;
-height: 140px;
-width: 100%;
+  background-color: #28305D;
+  height: 140px;
+  width: 100%;
 }
 
 @media (min-width: 998px) {
   nav {
-  background-color: #28305D;
-  height: 80px;
-  width: 100%;
-}}
+    background-color: #28305D;
+    height: 80px;
+    width: 100%;
+  }
+}
 
 /* HEADER : Logo + Boutons Connexion et Essayez */
 .logo {
-margin-right: 0;
-width: 180%;
-position: relative;
-bottom: 0.2rem;
-left: 5rem;
-}
-
-@media (min-width: 998px) {
-  .logo {
   margin-right: 0;
-  width: 120%;
   position: relative;
   bottom: 0.2rem;
   left: 5rem;
-}}
+}
 
-/* Boutons Connexion et Essayez gratuitement */
+/* Boutons Disponible sur les Stores
+.dw-app-store {
+  height: 2rem;
+  color: #fff;
+  width: 100%;
+  background-color: #fff;
+color: #28305D;
+  border: 0;
+  text-align: center;
+  border-radius: 40px;
+
+}
+
+.dw-play-store {
+  border-radius: 40px;
+  height: 2rem;
+  color: #fff;
+  background-color: #c33764;
+  border: 0;
+}
+
+@media (min-width: 998px) {
+  .dw-app-store {
+    color: #28305d;
+    background-color: #fff;
+    margin: auto 16px;
+    text-align: center;
+    position: relative;
+    right: auto;
+    top: auto;
+    border-radius: 40px;
+    border: 0;
+  }
+
+  .dw-play-store {
+    color: #fff;
+    background-color: #c33764;
+    margin: auto 16px;
+    text-align: center;
+    position: relative;
+    right: auto;
+    border-radius: 40px;
+    border: 0;
+  }
+}*/
+
+
+/* Boutons Connexion et Essayez gratuitement*/
 .signin {
+  border-radius: 40px;
   height: 4rem;
   margin-right: 2rem;
   margin-left: 2rem;
-  color: #fff;
-  background-color: #28305D;
+  color: #28305D;
+  background-color: #fff;
   border: 0;
   text-align: center;
   position: relative;
@@ -124,13 +162,13 @@ left: 5rem;
 }
 
 @media (min-width: 998px) {
-
   .signin {
+    border-radius: 40px;
     height: 2rem;
     margin-right: 2rem;
     margin-left: 2rem;
-    color: #fff;
-    background-color: #28305D;
+    color: #28305D;
+    background-color: #fff;
     border: 0;
     text-align: center;
     position: relative;
@@ -175,24 +213,24 @@ left: 5rem;
   width: 50%;
 }
 
-@media (min-width: 998px){
-.img-workout {
-  width: 35%;
+@media (min-width: 998px) {
+  .img-workout {
+    width: 35%;
   }
 }
 
 .title-width {
   width: 100%;
   margin-left: 0;
-  }
-
-@media (min-width: 998px){
-.title-width {
-  width: 40%;
-  margin-left: 0;
-  position: relative;
-  left: 30%;
 }
+
+@media (min-width: 998px) {
+  .title-width {
+    width: 40%;
+    margin-left: 0;
+    position: relative;
+    left: 30%;
+  }
 }
 
 /* Texte pour le contenu */
@@ -214,6 +252,7 @@ footer {
   text-decoration: none;
 }
 
+/* Survol des liens */
 a:hover {
   color: #C33764;
 }
@@ -238,6 +277,7 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+/* Titre de la carte */
 .card-title {
   color: #28305D;
   margin-left: 1.2rem;
@@ -263,11 +303,6 @@ a:hover {
   margin-bottom: 1.2rem;
 }
 
-/* Logo Apple et PlayStore */
-.fab {
-  font-size: 1rem;
-}
-
 /* Padding Carte */
 .card-pad {
   padding: 1rem 4rem;
@@ -279,6 +314,7 @@ a:hover {
   text-align: center;
 }
 
+/* Pour ne pas voir le trait bleu du lien */
 .store {
   text-decoration: none
 }
