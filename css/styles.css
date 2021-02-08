@@ -20,15 +20,15 @@ h1 {
 }
 
 .title-t, .top-title-right {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h2, h3, .subtitle, .subsection {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 p, .subnote, .card-text, .card-title, .btn {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .signin, .signup, , .legal-link {
@@ -102,7 +102,7 @@ nav {
 }
 
 .container-fluid {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 /* Texte de droite pour chaque séance*/
